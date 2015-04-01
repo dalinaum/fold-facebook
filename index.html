@@ -340,6 +340,16 @@ TextureImage.onload = function(){
 };
 TextureImage.src = "assets/facebook.png";
 
+setInterval(function () {
+    var rotation = Cube.Rotation;
+    rotation += 1;
+    if (rotation > 360) {
+        rotation -= 360;
+    }
+    Cube.Rotation = rotation;
+    GL.Draw(Cube, Texture);
+}, 30);
+
 </script>
 
 
