@@ -127,7 +127,7 @@ function WebGL(CID, FSID, VSID){
             this.GL.bindBuffer(this.GL.ELEMENT_ARRAY_BUFFER, TriangleBuffer);
             this.GL.bufferData(this.GL.ELEMENT_ARRAY_BUFFER, new Uint16Array(Object.Triangles), this.GL.STATIC_DRAW);
             //Generate The Perspective Matrix
-            var PerspectiveMatrix = MakePerspective(25, this.AspectRatio, 1, 10000.0);
+            var PerspectiveMatrix = MakePerspective(45, this.AspectRatio, 1, 10000.0);
          
             var TransformMatrix = MakeTransform(Object);
          
